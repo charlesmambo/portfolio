@@ -1,0 +1,16 @@
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.3rem;
+}
+
+.project {
+    width: 14rem;
+    height: 14rem;
+    /* border: 0.1rem solid #7d622f; */
+    border-radius: 0.2rem;
+    box-shadow: rgba(76, 82, 11, 0.489) 0px 1px 1px, rgba(51, 66, 9, 0.427) 0px 0px 1px 1px;
+    background-color: #35311877;
+}

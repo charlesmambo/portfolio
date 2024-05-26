@@ -13,6 +13,9 @@ import { FaRegFile } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import Project from '../projects/Project';
+
 
 function Main() {
   return (
@@ -101,7 +104,27 @@ function Main() {
 
            {/* MAIN COMPONENTS DISPLAY */}
            <div className='components-container'>
-             hey im here
+             <div className='nav-componennts'>
+               <ul className='nav-components-items'>
+                   <li>
+                  <a href='' >Home</a>
+                 </li>
+                 <li>
+                 <MdOutlineArrowRightAlt  className='arrow-icon-container'/>
+                 </li>
+                   <li>
+                  <a href='' >Projects</a>
+                 </li>
+                   <li>
+                  <a href='' ></a>
+                 </li>
+               </ul>
+             </div>
+
+             {/* main actavities display */}
+             <div className='main-mirror'>
+                <Project />
+             </div>
            </div>
         </div>
 
