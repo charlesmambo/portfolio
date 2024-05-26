@@ -1,0 +1,41 @@
+footer {
+    background-color: #02272b;
+    margin-top: 1.2rem;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.view-icon {
+    font-size: 1.3rem;
+    color: #d1911a;
+}
+
+.pc-icon {
+    color: #d1911a; 
+}
+
+.footer-styled-text {
+ display: inline-block;
+ font-weight: 900 !important;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #6e4b2c;
+    font-weight: 700;
+}
