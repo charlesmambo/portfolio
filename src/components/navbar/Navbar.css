@@ -88,3 +88,9 @@ nav {
         display: none;
     }
   }
+
+  @media screen and (max-width: 600px) {
+ .intro-text {
+    display: none;
+ }
+  }

@@ -14,6 +14,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Project from '../projects/Project';
 
 
@@ -110,14 +111,42 @@ function Main() {
                   <a href='' >Home</a>
                  </li>
                  <li>
-                 <MdOutlineArrowRightAlt  className='arrow-icon-container'/>
+                 <MdOutlineArrowRightAlt  className='arrow-icon-container adjust-520'/>
                  </li>
                    <li>
+                  <a href='' className='adjust-520'>Projects</a>
+                 </li>
+                 <li>
+                 <MdOutlineArrowRightAlt  className='arrow-icon-container adjust-520 adjust-desktop-view'/>
+                 </li>
+                   <li>
+                  <a href='' className='adjust-520 adjust-desktop-view'>About Me</a>
+                 </li>
+                 <li>
+                 <MdOutlineArrowRightAlt  className='arrow-icon-container adjust-520 adjust-desktop-view'/>
+                 </li>
+                   <li>
+                  <a href='' className='adjust-520 adjust-desktop-view'>My Skills</a>
+                 </li>
+
+                 {/*Hidden. Drop Down Navbar */}
+                  <li>
+                  <a href='' ><GiHamburgerMenu  className='hamburger-icon'/></a>
+
+                  <ul className='hidden-drop-down-navbar'>
+                  <li>
                   <a href='' >Projects</a>
                  </li>
-                   <li>
-                  <a href='' ></a>
+                 <li>
+                  <a href='' >About Me</a>
                  </li>
+                 <li>
+                  <a href='' >My Skills</a>
+                 </li>
+                  </ul>
+                  </li>
+                  
+                 
                </ul>
              </div>
 
@@ -130,7 +159,7 @@ function Main() {
 
         {/* SOCIAL ICONS LINK */}
         <div className='social-icons'>
-          <ul>
+          <ul className='social-icons-item'>
             <li>
                 <a href=''>
                 <FaLinkedin />

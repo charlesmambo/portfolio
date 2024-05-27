@@ -14,3 +14,17 @@
     box-shadow: rgba(76, 82, 11, 0.489) 0px 1px 1px, rgba(51, 66, 9, 0.427) 0px 0px 1px 1px;
     background-color: #35311877;
 }
+
+
+
+@media screen and (max-width: 520px) {
+    .project {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 893px) {
+    .project {
+        width: 80%;
+    }
+}

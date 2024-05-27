@@ -39,3 +39,19 @@ footer {
     color: #6e4b2c;
     font-weight: 700;
 }
+
+
+@media screen and (max-width: 520px) {
+    .footer-icon {
+       display: none;
+    }
+    .time p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    footer {
+        flex-direction: column-reverse;
+    }
+}
