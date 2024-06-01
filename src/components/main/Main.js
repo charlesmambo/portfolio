@@ -161,32 +161,32 @@ function Main() {
         <div className='social-icons'>
           <ul className='social-icons-item'>
             <li>
-                <a href=''>
+                <a href='https://www.linkedin.com/in/charles-mambo-932aa221b/' >
                 <FaLinkedin />
                 </a>
             </li>
             <li>
-                <a href=''>
+                <a href='https://www.instagram.com/cmwebtechs/'>
                 <FaSquareInstagram />
                 </a>
             </li>
             <li>
-                <a href=''>
+                <a href='https://www.facebook.com/profile.php?id=100072474335119'>
                 <FaFacebookSquare />
                 </a>
             </li>
             <li>
-                <a href=''>
+                <a href='https://x.com/CmTechs'>
                 <BsTwitterX />
                 </a>
             </li>
             <li>
-                <a href=''>
+                <a href='https://www.frontendmentor.io/profile/charlesmambo'>
                 <SiFrontendmentor />
                 </a>
             </li>
             <li>
-                <a href=''>
+                <a href='https://github.com/charlesmambo'>
                 <FaGithubSquare />
                 </a>
             </li>
