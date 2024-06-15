@@ -6,6 +6,7 @@ import img3 from '../assets/img3.png';
 import img4 from '../assets/img4.png';
 import img5 from '../assets/img6.png';
 import img6 from '../assets/img7.png';
+import Contact from '../contact/Contact';
 
 const Project = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -35,6 +36,10 @@ const Project = () => {
           </a>
         </div>
       ))}
+
+      <div>
+      <Contact />
+      </div>
     </div>
   );
 };

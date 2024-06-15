@@ -4,6 +4,7 @@
     justify-content: center;
     margin-top: 1.4rem;
     gap: 2rem;
+    position: relative;
 }
 
 .main-box {
@@ -13,6 +14,7 @@
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     display: flex;
     border-radius: 0.3rem;
+    position: relative;
 }
 
 /* SIDEBAR CSS STYLES */
@@ -20,6 +22,7 @@
     width: 12rem;
     border-right: 0.14rem solid #0f4d54;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    position: relative;
 }
 
 .sidebar-items {
@@ -62,6 +65,7 @@
 .folder-list {
     margin-top: 0.6rem;
     padding: 0 0.3rem;
+    position: relative;
 }
 
 .folder-list li {
@@ -188,6 +192,75 @@ display: none;
     display: none;
 }
 
+/* EMAIL SECTION  */
+/* EMAIL SECTION  */
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}
+
+/* Hide the form initially */
+.hidden {
+    display: none;
+}
+
+/* Centering the form */
+.emailForm {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+
 @media screen and (max-width: 520px) {
     .sidebar {
        display: none;
@@ -218,5 +291,18 @@ display: none;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .main-container {
+           flex-direction: column;
+        }
+
+        .social-icons-item {
+            display: flex;
+            flex-direction: row;
+            gap: 1.4rem;
+            border: 2px solid red;
+            padding: 0;
+            margin: 0;
         }
 }
