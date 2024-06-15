@@ -11,19 +11,26 @@ const Project = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   // Array of project images
-  const projects = [img1, img2, img3, img4, img5, img6];
+  const projects = [
+    { image: img1, link: 'https://slugsixmusicstream.netlify.app/' },
+    { image: img2, link: 'https://react-bookmark-landing-page.netlify.app/' },
+    { image: img3, link: 'https://res-landing-page.vercel.app/' },
+    { image: img4, link: 'https://papaya-sherbet-f1eac9.netlify.app/' },
+    { image: img5, link: 'https://cosmic-dasik-92fea3.netlify.app/' },
+    { image: img6, link: 'https://rainbow-entremet-137b69.netlify.app/' }
+  ];
 
   return (
     <div className='projects-container'>
-      {projects.map((image, index) => (
+      {projects.map((project, index) => (
         <div
           className='project'
           key={index}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <a href=''>
-            <img src={image} alt={`Project ${index + 1}`} className='project-image' />
+          <a href={project.link} target='_blank' rel='noopener noreferrer'>
+            <img src={project.image} alt={`Project ${index + 1}`} className='project-image' />
             {hoveredIndex === index && <div className='view-btn'>view</div>}
           </a>
         </div>
