@@ -8,7 +8,7 @@ import img5 from '../assets/img6.png';
 import img6 from '../assets/img7.png';
 import Contact from '../contact/Contact';
 
-const Project = () => {
+const Project = ({ toggleContactForm, showContactForm }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   // Array of project images
@@ -37,9 +37,12 @@ const Project = () => {
         </div>
       ))}
 
-      <div>
-      <Contact />
-      </div>
+       {/* Render Contact form only when showContactForm is true */}
+       {showContactForm && <Contact />}
+
+{/* "Email Me" link to toggle contact form visibility */}
+<a href="#" className="folder-link e" onClick={toggleContactForm}>
+</a>
     </div>
   );
 };

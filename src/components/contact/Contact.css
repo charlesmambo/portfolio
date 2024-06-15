@@ -14,7 +14,7 @@
 }
 
 .feedback-input {
-    color: #333333;
+    color: #aec0ce !important;
    font-family: inherit;
     font-weight: 500;
     font-size: 18px;
@@ -39,6 +39,7 @@ textarea {
     line-height: 150%;
     resize: vertical;
     padding: 13px;
+    color: #aec0ce;
 }
 
 .submit{
@@ -48,11 +49,12 @@ textarea {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    color: white;
+    color: #e4f0f1;
     font-size: 18px;
     padding: 12px 20px;
     margin-top: 10px;
     transition-delay: 200ms;
+    letter-spacing: 2px;
 }
 
 .submit:hover {

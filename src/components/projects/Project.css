@@ -47,6 +47,10 @@
     border-radius: 0.2rem;
   }
 
+  .e {
+     display: none;
+  }
+
 
 
 @media screen and (max-width: 520px) {

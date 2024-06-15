@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Main.css';
-//import { Link } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -21,11 +20,11 @@ import Contact from '../contact/Contact';
 
 
 function Main() {
-  const [showForm, setShowForm] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
 
-    const toggleForm = () => {
-        setShowForm(!showForm);
-    };
+  const toggleContactForm = () => {
+    setShowContactForm(!showContactForm);
+  };
 
   return (
     <div className='main-container'>
@@ -88,14 +87,11 @@ function Main() {
                   <p className='folder-title'>Contact</p>
                   <ul className='folder-list'>
                   <li className='email'>
-            <a href="#" className="folder-link">
-                <MdOutlineEmail className="folder-icon" />
-                Email Me
-            </a>
-            {/* {showForm && (
-              <Contact />
-            )} */}
-        </li>
+                    <a href="#" className="folder-link" onClick={toggleContactForm}>
+                        <MdOutlineEmail className="folder-icon" />
+                        Email Me
+                    </a>
+                </li>
                   <li>
                     <a href='' className='folder-link'>
                     <FaPhone  className='folder-icon'/>
@@ -163,7 +159,7 @@ function Main() {
 
              {/* main actavities display */}
              <div className='main-mirror'>
-                <Project />
+             <Project toggleContactForm={toggleContactForm} showContactForm={showContactForm} />
              </div>
            </div>
         </div>
