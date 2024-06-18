@@ -15,6 +15,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaCopy } from "react-icons/fa6";
 import Project from '../projects/Project';
 import Contact from '../contact/Contact';
 
@@ -25,6 +26,28 @@ function Main() {
   const toggleContactForm = () => {
     setShowContactForm(!showContactForm);
   };
+
+  const [showCallDiv, setShowCallDiv] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault(); 
+    setShowCallDiv(!showCallDiv);
+  };
+
+  const handleCopyClick = () => {
+    const phoneNumber = '+276 232-86152';
+    navigator.clipboard.writeText(phoneNumber)
+    .then(() => {
+      console.log('Phone number copied to clipboard!');
+      setTimeout(() => {
+        setShowCallDiv(false);
+      }, 2000); // Hide after 2 seconds
+    })
+    .catch((err) => {
+      console.error('Failed to copy: ', err);
+    });
+  };
+
 
   return (
     <div className='main-container'>
@@ -92,14 +115,22 @@ function Main() {
                         Email Me
                     </a>
                 </li>
-                  <li>
-                    <a href='' className='folder-link'>
-                    <FaPhone  className='folder-icon'/>
-                    Call Me
+                <li>
+                    <a href='#' className='folder-link' onClick={handleClick}>
+                      <FaPhone className='folder-icon' />
+                      Call Me
                     </a>
-                </li>
+                  </li>
+                  {showCallDiv && (
+                    <div className='call-div'>
+                      <p className='call-txt'>+276 232-86152</p>
+                      <p onClick={handleCopyClick} style={{ cursor: 'pointer' }}>
+                      <FaCopy className='call-txt cal-icon' />
+                    </p>
+                    </div>
+                  )}
                   <li>
-                    <a href='' className='folder-link'>
+                    <a href='https://web.whatsapp.com/' className='folder-link'>
                     <FaWhatsapp  className='folder-icon'/>
                     WhatsApp Me
                     </a>
